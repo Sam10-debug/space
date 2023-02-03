@@ -1,0 +1,25 @@
+@import "./home.scss";
+@import "./nav.scss";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  background-image: url("/images/background-home-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hamburger{
+  z-index: 999;
+  position: relative;
+  left: 2px;
+  top: 2px;
+  display: none;
+}
+@media screen and (max-width:768px) {
+  .hamburger{
+    display: flex;
+  }
+}
